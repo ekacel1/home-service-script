@@ -97,12 +97,10 @@ function selectDept(dept) {
 
   // Remplir tous les blocs
   document.getElementById('step2-content').textContent  = generateStep2(dept);
-  document.getElementById('step3-content').textContent  = generateStep3(dept);
   document.getElementById('step4a-content').textContent = generateStep4_cmd(dept);
   document.getElementById('step4b-content').textContent = generateStep4_config(dept);
   document.getElementById('step5-content').textContent  = generateStep5(dept);
   document.getElementById('step6-content').textContent  = generateStep6(dept);
-  document.getElementById('step7-content').textContent  = generateStep7(dept);
 
   // Afficher
   placeholder.style.display  = 'none';
@@ -221,12 +219,10 @@ function setupCopy(btnId, targetId) {
 }
 
 setupCopy('copy-step2',  'step2-content');
-setupCopy('copy-step3',  'step3-content');
 setupCopy('copy-step4a', 'step4a-content');
 setupCopy('copy-step4b', 'step4b-content');
 setupCopy('copy-step5',  'step5-content');
 setupCopy('copy-step6',  'step6-content');
-setupCopy('copy-step7',  'step7-content');
 
 // ── RACCOURCIS CLAVIER ────────────────────────────────────────────────────────
 document.addEventListener('keydown', e => {
